@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+
 #ifndef Sqlist_vector_h
 #define Sqlist_vector_h
 typedef int ElemType;

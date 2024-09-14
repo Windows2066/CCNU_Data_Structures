@@ -9,7 +9,6 @@ signed main()
 {
     SqList L;
     InitList(L);
-    // L.data.resize(5);
     ListInsert(L, 1, 23);
     ListInsert(L, 2, 56);
     ListInsert(L, 3, 89);
@@ -48,7 +47,7 @@ signed main()
     cout << "b: ";
     ListTraverse(b);
     cout << "a+b(With B): ";
-    unionListWithB(a, b);
+    unionListWithoutB(a, b);
     // cout << "a+b(Without B): ";
     // unionListWithoutB(a, b);
     ListTraverse(a);
