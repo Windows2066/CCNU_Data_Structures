@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include "list_stl.cpp"
-// #include "list_ptr.cpp"
+// #include "list_stl.cpp"
+#include "list_ptr.cpp"
 #include "ListFunction.cpp"
 
 #ifdef list_ptr_h
@@ -14,6 +14,7 @@ signed main()
     ListInsert(L, 3, 89);
     ListInsert(L, 4, 76);
     ListInsert(L, 5, 18);
+    cout << "L: ";
     ListTraverse(L);
     int i = 3, x = 56, y = 88, e = 0;
     cout << ListLength(L) << endl;

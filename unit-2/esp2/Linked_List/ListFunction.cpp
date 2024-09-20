@@ -1,5 +1,6 @@
 #ifdef list_ptr_h
 #include "list_ptr.cpp"
+
 void MergeLists(List &L1, List &L2)
 {
     if (ListEmpty(L2))
@@ -63,6 +64,7 @@ void PurifyList(List &L)
 
 #ifdef list_stl_h
 #include "list_stl.cpp"
+
 void MergeLists(List &L1, List &L2)
 {
     L1.data.splice(L1.data.end(), L2.data);
@@ -88,4 +90,5 @@ void PurifyList(List &L)
         ++it;
     }
 }
+
 #endif

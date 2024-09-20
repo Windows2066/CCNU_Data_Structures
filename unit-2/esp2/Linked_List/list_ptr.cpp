@@ -16,6 +16,7 @@ typedef struct
     int length;
 } List;
 
+// 初始化双向链表
 void InitList(List &L)
 {
     L.head = nullptr;
