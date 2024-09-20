@@ -1,6 +1,10 @@
-# 《数据结构及应用算法教程》（严蔚敏 陈文博 编著）2024学年刘巍老师课堂作业
+# CCNU-Data-Structures
 
-#### 第二章线性表
+《数据结构及应用算法教程》（严蔚敏 陈文博 编著）刘巍老师上机实验参考代码
+
+## 第二单元：线性表
+
+### 第一次实验：顺序表与集合合并
 
 * 顺序表
   * [手写顺序表的 12 种操作的头文件 array 实现](https://github.com/Serendipity565/CCNU-Data-Structures/blob/Windows2066/unit-2/esp1/Sequential_List/Sqlist_array.cpp)
