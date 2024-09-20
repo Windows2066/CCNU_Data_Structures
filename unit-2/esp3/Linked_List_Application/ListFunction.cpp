@@ -104,8 +104,3 @@ LinkList MergeSortedLists(LinkList L1, LinkList L2)
 }
 
 #endif
-
-#ifdef list_stl_h
-#include "list_stl.cpp"
-
-#endif
