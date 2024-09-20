@@ -2,9 +2,11 @@
 #ifndef list_ptr_h
 #define list_ptr_h
 
+typedef int ElemType;
+
 typedef struct LNode
 {
-    int data;
+    ElemType data;
     struct LNode *prev;
     struct LNode *next;
 } LNode;
