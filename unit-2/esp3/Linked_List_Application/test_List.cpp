@@ -45,15 +45,34 @@ signed main()
     ListTraverse(L1);
     cout << "L2: ";
     ListTraverse(L2);
-    LinkList L3 = FindFirstCommonNode(L1, L2);
-    cout << "L3: ";
-    if (L3 != nullptr)
-        cout << L3->data << endl;
+    LinkList Lc = FindFirstCommonNode(L1, L2);
+    cout << "Lc: ";
+    if (Lc != nullptr)
+        cout << Lc->data << endl;
     else
         cout << "NULL" << endl;
 
-    LinkList L4 = MergeSortedLists(L1, L2);
-    cout << "L4(=L1+L2): ";
-    ListTraverse(L4);
+    LinkList L3;
+    InitList(L3);
+    LinkList L4;
+    InitList(L4);
+    ListInsert(L3, 1, 1);
+    ListInsert(L3, 2, 2);
+    ListInsert(L3, 3, 3);
+    ListInsert(L3, 4, 4);
+    ListInsert(L3, 5, 5);
+    ListInsert(L3, 6, 6);
+
+    ListInsert(L4, 1, 3);
+    ListInsert(L4, 2, 4);
+    ListInsert(L4, 3, 5);
+    ListInsert(L4, 4, 6);
+    ListInsert(L4, 5, 7);
+    ListInsert(L4, 6, 8);
+    ListInsert(L4, 7, 9);
+
+    LinkList L5 = MergeSortedLists(L3, L4);
+    cout << "L5(=L3+L4): ";
+    ListTraverse(L5);
 }
 #endif
