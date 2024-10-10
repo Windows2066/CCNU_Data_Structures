@@ -33,3 +33,14 @@
 
 * [手写双向循环链表并实现快速排序](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-3/esp4/Doubly_Linked_List.cpp)
 * [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-3/esp4/test.cpp)
+
+## 第四单元：栈与队列
+
+* 栈
+  * [手写栈的9种操作的头文件 Sqlist 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_Sqlist.cpp)
+  * [手写栈的9种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_stl.cpp)
+
+### 第五次实验：栈的应用(判断出栈序列是否合法)
+
+* [判断出栈序列是否合法](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/StackFunction.cpp)
+* [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/test.cpp)
