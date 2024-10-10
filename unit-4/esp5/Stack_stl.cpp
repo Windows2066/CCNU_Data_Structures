@@ -45,6 +45,16 @@ bool StackEmpty(Stack &S)
     return S.s.empty();
 }
 
+bool StackFull(Stack &S)
+{
+    if (!S.is_init)
+    {
+        std::cerr << "Stack is not initialized!" << std::endl;
+        return false;
+    }
+    return false;
+}
+
 int StackLength(Stack &S)
 {
     if (!S.is_init)
