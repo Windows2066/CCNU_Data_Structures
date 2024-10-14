@@ -37,10 +37,16 @@
 ## 第四单元：栈与队列
 
 * 栈
-  * [手写栈的9种操作的头文件 Sqlist 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_Sqlist.cpp)
-  * [手写栈的9种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_stl.cpp)
+  * [手写栈的10种操作的头文件 Sqlist 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_Sqlist.cpp)
+  * [手写栈的10种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_stl.cpp)
 
 ### 第五次实验：栈的应用(判断出栈序列是否合法)
 
 * [判断出栈序列是否合法](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/StackFunction.cpp)
 * [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/test.cpp)
+
+### 第六次实验：栈与递归(括号表达式匹配，回文字符串判断与递归求最大最小值)
+
+* [括号表达式匹配](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/BracketMatching.cpp)
+* [回文字符串判断](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/PalindromeStringCheck.cpp)
+* [递归求最大最小值](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/RecursiveMaxMinCalculation.cpp)
