@@ -39,6 +39,11 @@
 * 栈
   * [手写栈的10种操作的头文件 Sqlist 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_Sqlist.cpp)
   * [手写栈的10种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp5/Stack_stl.cpp)
+* 队列
+  * [手写循环队列的10种操作的头文件 Sqlist 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/CircularQueue_SqList.cpp)
+  * [手写循环队列的10种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/CircularQueue_stl.cpp)
+  * [手写双端队列的13种操作的头文件 List 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/Deque_List.cpp)
+  * [手写双端队列的13种操作的头文件 stl 实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/Deque_stl.cpp)
 
 ### 第五次实验：栈的应用(判断出栈序列是否合法)
 
@@ -50,3 +55,13 @@
 * [括号表达式匹配](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/BracketMatching.cpp)
 * [回文字符串判断](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/PalindromeStringCheck.cpp)
 * [递归求最大最小值](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp6/RecursiveMaxMinCalculation.cpp)
+
+### 第七次实验：队列的应用
+
+* [循环队列测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/test_CircularQueue.cpp)
+* [双端队列测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/test_Deque.cpp)
+* [求数组中相同的数的序号的差的最大值](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp7/QueueApplication.cpp)
+
+### 第八次实验：中缀表达式求值
+
+* [中缀表达式求值](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp8/InfixExpressionEvaluation.cpp)
