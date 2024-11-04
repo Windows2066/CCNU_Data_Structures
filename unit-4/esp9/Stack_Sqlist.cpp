@@ -13,7 +13,7 @@ struct Stack
     int top;
     int stacksize;
     int incrementsize;
-} SqStack;
+};
 
 void InitStack(Stack &S)
 {

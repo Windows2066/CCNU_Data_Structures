@@ -9,7 +9,7 @@ struct Stack
 {
     std::stack<ElemType> s;
     bool is_init = false;
-} S;
+};
 
 void InitStack(Stack &S)
 {
