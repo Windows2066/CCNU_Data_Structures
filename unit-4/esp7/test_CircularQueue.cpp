@@ -37,7 +37,7 @@ int main()
     cout << "After clearing the queue:" << endl;
     QueueTraverse(Q);
 
-    for (int i = 1; i <= 99; i++)
+    for (int i = 1; i <= 109; i++)
         EnQueue(Q, i);
     cout << "Queue is full: " << (QueueFull(Q) ? "Yes" : "No") << endl;
 

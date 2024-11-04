@@ -26,17 +26,14 @@ int precedence(char op)
 // 计算
 int applyOp(int a, int b, char op)
 {
-    switch (op)
-    {
-    case '+':
+    if (op == '+')
         return a + b;
-    case '-':
+    if (op == '-')
         return a - b;
-    case '*':
+    if (op == '*')
         return a * b;
-    case '/':
+    if (op == '/')
         return a / b;
-    }
     return 0;
 }
 
@@ -45,7 +42,6 @@ bool isValidExpression(const string &exp)
 {
     stack<char> s;
     bool flag = true; // 检查最后一个运算符后是否有数字
-
     for (int i = 0; i < exp.length(); i++)
     {
         char c = exp[i];
@@ -88,7 +84,6 @@ int evaluateInfix(const string &exp)
 {
     stack<int> values;
     stack<char> ops;
-
     for (int i = 0; i < exp.length(); i++)
     {
         if (exp[i] == ' ')
@@ -153,11 +148,11 @@ int evaluateInfix(const string &exp)
 int main()
 {
     string exp;
-    cout << "Enter an infix expression: ";
+    cout << "输入表达式: ";
     getline(cin, exp);
     if (isValidExpression(exp))
-        cout << "The value of the expression is: " << evaluateInfix(exp) << endl;
+        cout << evaluateInfix(exp) << endl;
     else
-        cout << "Invalid expression" << endl;
+        cout << "表达式不合法" << endl;
     return 0;
 }
