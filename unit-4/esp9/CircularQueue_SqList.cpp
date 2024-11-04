@@ -96,7 +96,7 @@ bool EnQueue(Queue &Q, int e)
     }
     if ((Q.rear + 1) % Q.queuesize == Q.front)
     {
-        // 队列满，扩展队列
+        // 闃熷垪婊★紝鎵╁睍闃熷垪
         int *newData = new int[Q.queuesize + Q.incrementsize];
         int i = 0;
         while (Q.front != Q.rear)
@@ -141,7 +141,7 @@ bool QueueTraverse(Queue Q)
     //     std::cout << "Queue is empty!" << std::endl;
     //     return false;
     // }
-    std::cout << "便道上目前有" << QueueLength(Q) << "辆车：\n";
+    std::cout << "渚块亾涓婄洰鍓嶆湁" << QueueLength(Q) << "杈嗚溅锛歕n";
     int i = Q.front;
     for (int i = 0; i <= 30; i++)
         std::cout << "-\n"[i == 30];

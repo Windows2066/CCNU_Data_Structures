@@ -7,27 +7,27 @@
 
 using namespace std;
 
-constexpr int PARKING_SIZE = 5; // Õ£≥µ≥°¥Û–°
-constexpr int ACCESS_SIZE = 5;  // ±„µ¿¥Û–°
+constexpr int PARKING_SIZE = 5; // ÂÅúËΩ¶Âú∫Â§ßÂ∞è
+constexpr int ACCESS_SIZE = 5;  // ‰æøÈÅìÂ§ßÂ∞è
 
 char Menu()
 {
     char choice;
     for (int i = 0; i <= 30; i++)
         cout << "#\n"[i == 30];
-    cout << "#       Õ£≥µ≥°π‹¿ÌœµÕ≥       #\n";
-    cout << "#      Ω¯»ÎÕ£≥µ≥°( ‰»ÎA)     #\n";
-    cout << "#      ¿Îø™Õ£≥µ≥°( ‰»ÎD)     #\n";
-    // cout << "#    œ‘ æÕ£≥µ≥°◊¥Ã¨( ‰»ÎS)   #\n";
-    // cout << "#     œ‘ æ±„µ¿◊¥Ã¨( ‰»ÎQ)    #\n";
-    cout << "#       ÕÀ≥ˆœµÕ≥( ‰»Î0)      #\n";
+    cout << "#       ÂÅúËΩ¶Âú∫ÁÆ°ÁêÜÁ≥ªÁªü       #\n";
+    cout << "#      ËøõÂÖ•ÂÅúËΩ¶Âú∫(ËæìÂÖ•A)     #\n";
+    cout << "#      Á¶ªÂºÄÂÅúËΩ¶Âú∫(ËæìÂÖ•D)     #\n";
+    // cout << "#    ÊòæÁ§∫ÂÅúËΩ¶Âú∫Áä∂ÊÄÅ(ËæìÂÖ•S)   #\n";
+    // cout << "#     ÊòæÁ§∫‰æøÈÅìÁä∂ÊÄÅ(ËæìÂÖ•Q)    #\n";
+    cout << "#       ÈÄÄÂá∫Á≥ªÁªü(ËæìÂÖ•0)      #\n";
     for (int i = 0; i <= 30; i++)
         cout << "#\n"[i == 30];
-    cout << "«Î ‰»Î÷∏¡Ó£∫";
+    cout << "ËØ∑ËæìÂÖ•Êåá‰ª§Ôºö";
     cin >> choice;
     if (choice != 'A' && choice != 'D' && choice != '0')
     {
-        cout << "÷∏¡ÓŒﬁ–ß£°" << endl;
+        cout << "Êåá‰ª§Êó†ÊïàÔºÅ" << endl;
         return Menu();
     }
     return choice;
@@ -35,8 +35,8 @@ char Menu()
 
 int main()
 {
-    Stack Parking; // Õ£≥µ≥°
-    Queue Access;  // ±„µ¿
+    Stack Parking; // ÂÅúËΩ¶Âú∫
+    Queue Access;  // ‰æøÈÅì
     InitStack(Parking);
     InitQueue(Access);
     int choice, cnt = 0;
@@ -47,11 +47,11 @@ int main()
         {
             if (cnt > PARKING_SIZE + ACCESS_SIZE)
             {
-                cout << "≥µŒª“—¬˙£¨Œﬁ∑®Ω¯»Î£°" << endl;
+                cout << "ËΩ¶‰ΩçÂ∑≤Êª°ÔºåÊó†Ê≥ïËøõÂÖ•ÔºÅ" << endl;
             }
             else
             {
-                cout << "«Î ‰»Î≥µ∫≈£∫";
+                cout << "ËØ∑ËæìÂÖ•ËΩ¶Âè∑Ôºö";
                 int car;
                 cin >> car;
                 if (cnt < PARKING_SIZE)
@@ -72,11 +72,11 @@ int main()
         {
             if (cnt == 0)
             {
-                cout << "Õ£≥µ≥°Œ™ø’£°" << endl;
+                cout << "ÂÅúËΩ¶Âú∫‰∏∫Á©∫ÔºÅ" << endl;
             }
             else
             {
-                cout << "«Î ‰»Î≥µ∫≈£∫";
+                cout << "ËØ∑ËæìÂÖ•ËΩ¶Âè∑Ôºö";
                 int car;
                 cin >> car;
                 Stack TempParking;
@@ -114,7 +114,7 @@ int main()
                 }
                 else
                 {
-                    cout << "Õ£≥µ≥°ƒ⁄√ª”–∏√≥µ¡æ£°" << endl;
+                    cout << "ÂÅúËΩ¶Âú∫ÂÜÖÊ≤°ÊúâËØ•ËΩ¶ËæÜÔºÅ" << endl;
                     while (!StackEmpty(TempParking))
                     {
                         int e;

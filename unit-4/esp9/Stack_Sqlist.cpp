@@ -131,7 +131,7 @@ bool StackTraverse(const Stack &S)
     //     std::cerr << "Stack is not initialized!" << std::endl;
     //     return false;
     // }
-    std::cout << "停车场目前有" << StackLength(S) << "辆车：\n";
+    std::cout << "鍋滆溅鍦虹洰鍓嶆湁" << StackLength(S) << "杈嗚溅锛歕n";
     for (int i = 0; i <= 30; i++)
         std::cout << "-\n"[i == 30];
     for (int i = 0; i <= S.top; i++)
