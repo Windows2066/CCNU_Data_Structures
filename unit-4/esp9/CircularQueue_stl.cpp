@@ -70,11 +70,14 @@ bool DeQueue(Queue &Q, int &e)
 
 bool QueueTraverse(Queue Q)
 {
-    if (QueueEmpty(Q))
-    {
-        std::cout << "Queue is empty!" << std::endl;
-        return false;
-    }
+    // if (QueueEmpty(Q))
+    // {
+    //     std::cout << "Queue is empty!" << std::endl;
+    //     return false;
+    // }
+    std::cout << "便道上目前有" << QueueLength(Q) << "辆车：\n";
+    for (int i = 0; i <= 30; i++)
+        std::cout << "-\n"[i == 30];
     std::queue<int> q = Q.q;
     while (!q.empty())
     {
@@ -82,6 +85,8 @@ bool QueueTraverse(Queue Q)
         q.pop();
     }
     std::cout << std::endl;
+    for (int i = 0; i <= 30; i++)
+        std::cout << "-\n"[i == 30];
     return true;
 }
 

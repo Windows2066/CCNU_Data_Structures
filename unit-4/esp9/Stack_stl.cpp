@@ -105,16 +105,19 @@ bool Pop(Stack &S, int &e)
 
 bool StackTraverse(Stack S)
 {
-    if (!S.is_init)
-    {
-        std::cerr << "Stack is not initialized!" << std::endl;
-        return false;
-    }
-    if (S.s.empty())
-    {
-        std::cout << "Stack is empty!" << std::endl;
-        return true;
-    }
+    // if (!S.is_init)
+    // {
+    //     std::cerr << "Stack is not initialized!" << std::endl;
+    //     return false;
+    // }
+    // if (S.s.empty())
+    // {
+    //     std::cout << "Stack is empty!" << std::endl;
+    //     return true;
+    // }
+    std::cout << "停车场目前有" << StackLength(S) << "辆车：\n";
+    for (int i = 0; i <= 30; i++)
+        std::cout << "-\n"[i == 30];
     std::stack<int> temp = S.s;
     while (!temp.empty())
     {
@@ -122,6 +125,8 @@ bool StackTraverse(Stack S)
         temp.pop();
     }
     std::cout << std::endl;
+    for (int i = 0; i <= 30; i++)
+        std::cout << "-\n"[i == 30];
     return true;
 }
 
