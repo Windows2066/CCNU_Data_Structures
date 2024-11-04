@@ -25,6 +25,11 @@ char Menu()
         cout << "#\n"[i == 30];
     cout << "请输入指令：";
     cin >> choice;
+    if (choice != 'A' && choice != 'D' && choice != '0')
+    {
+        cout << "指令无效！" << endl;
+        return Menu();
+    }
     return choice;
 }
 
