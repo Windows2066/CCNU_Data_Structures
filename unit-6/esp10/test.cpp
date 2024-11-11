@@ -22,11 +22,6 @@ int main()
     //     / \
     //    4   5
     CreateBiTree(T);
-    // T = new BiTNode{1, nullptr, nullptr};
-    // T->lchild = new BiTNode{2, nullptr, nullptr};
-    // T->rchild = new BiTNode{3, nullptr, nullptr};
-    // T->lchild->lchild = new BiTNode{4, nullptr, nullptr};
-    // T->lchild->rchild = new BiTNode{5, nullptr, nullptr};
     std::cout << "创建二叉树完成。" << std::endl;
 
     // 4. 判断二叉树是否为空
