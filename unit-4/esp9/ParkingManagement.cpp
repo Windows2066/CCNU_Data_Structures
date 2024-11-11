@@ -39,7 +39,8 @@ int main()
     Queue Access;  // 便道
     InitStack(Parking);
     InitQueue(Access);
-    int choice, cnt = 0;
+    char choice;
+    int cnt = 0;
     choice = Menu();
     while (choice != '0')
     {

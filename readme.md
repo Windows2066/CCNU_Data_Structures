@@ -69,3 +69,19 @@
 ### 第九次实验：停车场管理系统
 
 * [停车场管理系统](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp9/ParkingManagement.cpp)
+
+## 第六单元：二叉树和树
+
+* [二叉树的链式实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp10/BinaryTree_list.cpp)
+* [二叉树的邻接表实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp10/BinaryTree_stl.cpp)
+
+### 第十次实验：二叉树的表示与实现
+
+* [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp10/test.cpp)
+
+### 第十一次实验：二叉树的应用
+
+* [给定先序与中序遍历，求后序遍历](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test1.cpp)
+* [交换二叉树所有节点的左右子树](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test2.cpp)
+* [判断二叉树是否为AVL树](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test3.cpp)
+* [给定先序遍历，求二叉树节点总数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test4.cpp)
