@@ -113,10 +113,10 @@ int LeftSibling(BiTree T, ElemType e)
     int parent = Parent(T, e);
     if (parent == -1)
         return -1;
-    BiTree node = FindNode(T, parent);
-    if (node->rchild && node->rchild->data == e && node->lchild)
-        return node->lchild->data;
-    return -1;
+    int ls = LeftChild(T, parent);
+    if (ls == e)
+        return -1;
+    return ls;
 }
 
 // 查找右兄弟节点
@@ -127,10 +127,10 @@ int RightSibling(BiTree T, ElemType e)
     int parent = Parent(T, e);
     if (parent == -1)
         return -1;
-    BiTree node = FindNode(T, parent);
-    if (node->lchild && node->lchild->data == e && node->rchild)
-        return node->rchild->data;
-    return -1;
+    int rs = RightChild(T, parent);
+    if (rs == e)
+        return -1;
+    return rs;
 }
 
 // 插入子节点
