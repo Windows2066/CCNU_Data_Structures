@@ -133,7 +133,7 @@ int RightSibling(BiTree T, ElemType e)
     return rs;
 }
 
-// 插入子节点
+// 插入子树
 bool InsertChild(BiTree T, ElemType p, int LR, BiTree c)
 {
     if (T == nullptr)
@@ -141,9 +141,15 @@ bool InsertChild(BiTree T, ElemType p, int LR, BiTree c)
     if (T->data == p)
     {
         if (LR == 0)
+        {
+            c->rchild = T->lchild;
             T->lchild = c;
+        }
         else
+        {
+            c->rchild = T->rchild;
             T->rchild = c;
+        }
         return true;
     }
     if (InsertChild(T->lchild, p, LR, c))

@@ -105,30 +105,18 @@ int RightChild(BiTree T, ElemType e)
     return -1;
 }
 
-BiTree findParent(BiTree T, ElemType e)
-{
-    if (T == nullptr || T->data == e)
-        return nullptr;
-    if ((T->lchild && T->lchild->data == e) || (T->rchild && T->rchild->data == e))
-        return T;
-    BiTree tmp = findParent(T->lchild, e);
-    if (tmp != nullptr)
-        return tmp;
-    return findParent(T->rchild, e);
-}
-
 // 查找左兄弟节点
 int LeftSibling(BiTree T, ElemType e)
 {
     if (T == nullptr || T->data == e)
         return -1;
-    BiTree parent = findParent(T, e);
-    if (parent == nullptr)
+    int parent = Parent(T, e);
+    if (parent == -1)
         return -1;
-    // 如果 e 是右子节点，返回左子节点的数据
-    if (parent->rchild && parent->rchild->data == e && parent->lchild)
-        return parent->lchild->data;
-    return -1;
+    int ls = LeftChild(T, parent);
+    if (ls == e)
+        return -1;
+    return ls;
 }
 
 // 查找右兄弟节点
@@ -136,16 +124,16 @@ int RightSibling(BiTree T, ElemType e)
 {
     if (T == nullptr || T->data == e)
         return -1;
-    BiTree parent = findParent(T, e);
-    if (parent == nullptr)
+    int parent = Parent(T, e);
+    if (parent == -1)
         return -1;
-    // 如果 e 是左子节点，返回右子节点的数据
-    if (parent->lchild && parent->lchild->data == e && parent->rchild)
-        return parent->rchild->data;
-    return -1;
+    int rs = RightChild(T, parent);
+    if (rs == e)
+        return -1;
+    return rs;
 }
 
-// 插入子节点
+// 插入子树
 bool InsertChild(BiTree T, ElemType p, int LR, BiTree c)
 {
     if (T == nullptr)
@@ -153,9 +141,15 @@ bool InsertChild(BiTree T, ElemType p, int LR, BiTree c)
     if (T->data == p)
     {
         if (LR == 0)
+        {
+            c->rchild = T->lchild;
             T->lchild = c;
+        }
         else
+        {
+            c->rchild = T->rchild;
             T->rchild = c;
+        }
         return true;
     }
     if (InsertChild(T->lchild, p, LR, c))

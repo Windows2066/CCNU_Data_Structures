@@ -47,23 +47,33 @@ int main()
     // 10. 查找右兄弟节点
     std::cout << "右兄弟节点 of 2: " << RightSibling(T, 2) << std::endl;
 
-    // 11. 插入子节点
-    // 插入节点6为节点3的左子节点
-    BiTree node6 = new BiTNode{6, nullptr, nullptr};
-    bool insertResult = InsertChild(T, 3, 0, node6);
-    std::cout << "插入节点6到节点3的左子节点: " << (insertResult ? "成功" : "失败") << std::endl;
+    // 11. 插入子树
+    // 插入如下二叉树，其父节点为2，插入位置为右子节点：
+    //        6
+    //       /
+    //      7
+    //     / \
+    //    8   9
+    BiTree c;
+    InitBiTree(c);
+    CreateBiTree(c);
+    std::cout << "插入子树: " << (InsertChild(T, 2, 1, c) ? "成功" : "失败") << std::endl;
 
     // 12. 删除子节点
     // 删除节点2的右子节点（节点5）
-    bool deleteResult = DeleteChild(T, 2, 1);
-    std::cout << "删除节点2的右子节点: " << (deleteResult ? "成功" : "失败") << std::endl;
+    bool deleteResult = DeleteChild(T, 6, 1);
+    std::cout << "删除节点6的右子节点: " << (deleteResult ? "成功" : "失败") << std::endl;
 
     // 此时二叉树如下：
     //        1
     //       / \
     //      2   3
-    //     /   /
+    //     / \   
     //    4   6
+    //       /
+    //      7
+    //     / \
+    //    8   9
 
     // 13. 遍历二叉树
     std::cout << "中序遍历二叉树: ";
