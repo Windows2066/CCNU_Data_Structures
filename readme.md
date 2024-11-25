@@ -70,6 +70,13 @@
 
 * [停车场管理系统](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-4/esp9/ParkingManagement.cpp)
 
+## 第五单元：串和数组
+
+### 第十二次实验：稀疏矩阵加法
+
+* [稀疏矩阵](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-5/esp12/SparseMatrix.cpp)
+* [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-5/esp12/test.cpp)
+
 ## 第六单元：二叉树和树
 
 * [二叉树的链式实现](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp10/BinaryTree_list.cpp)
