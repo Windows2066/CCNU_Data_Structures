@@ -92,3 +92,7 @@
 * [交换二叉树所有节点的左右子树](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test2.cpp)
 * [判断二叉树是否为AVL树](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test3.cpp)
 * [给定先序遍历，求二叉树节点总数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp11/test4.cpp)
+
+### 第十三次实验：二叉树的直观表示与层次遍历输出深度
+
+* [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp13/test.cpp)
