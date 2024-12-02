@@ -65,5 +65,7 @@ int main()
     //      /
     //     10
     printTree(T);
+    // ‘└─’后面的数字表示右子树
+    // ‘├─’后面的数字表示左子树
     cout << "Depth: " << levelOrderTraversal(T) << endl;
 }
