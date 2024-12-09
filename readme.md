@@ -96,3 +96,14 @@
 ### 第十三次实验：二叉树表示
 
 * [测试函数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp13/test.cpp)
+
+### 第十五次实验
+
+* [二叉树的带权路径长度](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp15/test1.cpp)
+* [邻接矩阵dfs找两点间是否存在路径](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp15/test2.cpp)
+* [邻接表dfs找两点间是否有长度为k的路径](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/unit-6/esp15/test3.cpp)
+
+## 第十四次实验
+
+* [判断无头结点的单链表是否有环](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/esp14/test1.cpp)
+* [最小的未出现的正整数](https://github.com/Windows2066/CCNU_Data_Structures/blob/main/esp14/test2.cpp)

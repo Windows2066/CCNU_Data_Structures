@@ -3,7 +3,7 @@
 using namespace std;
 
 // 以直观的方式输出二叉树
-void printTree(BiTNode *root, string indent = "", bool last = true)
+void printTree(BiTNode *root, string indent, bool last)
 {
     if (root != nullptr)
     {
@@ -64,7 +64,7 @@ int main()
     //       8     9
     //      /
     //     10
-    printTree(T);
+    printTree(T, "", true);
     // ‘└─’后面的数字表示右子树
     // ‘├─’后面的数字表示左子树
     cout << "Depth: " << levelOrderTraversal(T) << endl;
